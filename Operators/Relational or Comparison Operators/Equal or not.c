@@ -12,7 +12,7 @@ int main()
         if(a==b){
             printf("a equals to b.");
         }else{
-            printf("a is not eqauls to b");
+            printf("a is not equals to b");
         }
 
     return 0;
