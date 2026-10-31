@@ -2,30 +2,25 @@
 
 int main(){
     int marks;
-        printf("Enter marks :");
-        scanf("%d",&marks);
 
-        if(marks>=0 && marks<30)
-        {
-            printf("C\n");
-        }
-        else if(marks>=30 && marks<70)
-        {
-            printf("B\n");
-        }
-        else if(marks>=70 && marks<90)
-        {
-            printf("A\n");
-        }
-        else if(marks>=90 && marks<=100)
-        {
-            printf("A+\n");
-        }
-        else
-        {
-            printf("Wrong Input!\n");
-        }
+    printf("Enter marks :");
+    scanf("%d",&marks);
 
-    printf("Thank You...");
+    if(marks>=80 && marks<=100){
+        printf("Dist\n");
+    }
+    else if(marks>=60 && marks<80){
+        printf("First Class\n");
+    }
+    else if(marks>=35 && marks<60){
+        printf("Second Class\n");
+    }
+    else if (marks>=0 && marks<35){
+        printf("Fail\n");
+    }
+    else{
+        printf("Invalid Input\n");
+    }
+    
     return 0;
 }
